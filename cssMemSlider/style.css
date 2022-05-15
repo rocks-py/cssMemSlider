@@ -105,13 +105,25 @@ input[type="radio"]:checked+label>.slider__navlink {
 }
 
 label {
-    /* display: block; */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
     height: 15px;
     width: 15px;
     border-radius: 50%;
     background-color: #71a5f1;
     border: 2px solid #71a5f1;
-    margin: 10px;
+}
+
+label:hover .circle {
+    background-color: white;
+    border-color: white;
 }
 
 

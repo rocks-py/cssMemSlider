@@ -10,9 +10,13 @@
 </head>
 
 <body>
+    <input data-text="Some joke 1" type="radio" name="radioButton" id="radio1" checked></input>
+    <input data-text="Some joke 2" type="radio" name="radioButton" id="radio2"></input>
+    <input data-text="Some joke 3" type="radio" name="radioButton" id="radio3"></input>
+    <input data-text="Some joke 4" type="radio" name="radioButton" id="radio4"></input>
     <div class="carousel-wrapper">
         <div class="carousel">
-            <div class="mem-container mem-001" id="slides__1">
+            <div class="mem-container mem-001 first" id="slides__1">
                 <div class="image"></div>
             </div>
             <div class="mem-container mem-002" id="slides__2">
@@ -28,23 +32,11 @@
     </div>
     
     <div class="slider__nav">
+            <label for="radio1"><a class="slider__navlink" href="#slides__1">some text</a></label>        
+            <label for="radio2"><a class="slider__navlink" href="#slides__2">some text</a></label> 
+            <label for="radio3"><a class="slider__navlink" href="#slides__3">some text</a></label>
+            <label for="radio4"><a class="slider__navlink" href="#slides__4">some text</a></label>
         
-        <a  data-text="Some joke" class="slider__navlink" href="#slides__1">
-            <input type="radio" name="radioButton" id="radio1" checked></input>
-            <label for="radio1"></label>
-        </a>
-        <a  data-text="Some joke" class="slider__navlink" href="#slides__2">
-            <input type="radio" name="radioButton" id="radio2"></input>
-            <label for="radio2"></label>
-        </a>
-        <a  data-text="Some joke" class="slider__navlink" href="#slides__3">
-            <input type="radio" name="radioButton" id="radio3"></input>
-            <label for="radio3"></label>
-        </a>
-        <a  data-text="Some joke" class="slider__navlink" href="#slides__4">
-            <input type="radio" name="radioButton" id="radio4"></input>
-            <label for="radio4"></label>
-        </a>
     </div>
 
     <p>

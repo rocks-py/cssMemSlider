@@ -12,7 +12,7 @@ body {
     overflow: hidden;
     border-radius: 50px;
     /* for animation */
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 .carousel {
@@ -22,11 +22,7 @@ body {
 .mem-container {
     width: 90vw;
     height: 60vh;
-    flex-grow: 1;
-}
-
-.mem-container.mem-001 {
-    background-color: blueviolet;
+    transition: 2s;
 }
 
 .image {
@@ -61,27 +57,44 @@ body {
     margin-top: 2rem;
 }
 
+/* ~ ищем на этом же уровне элемент с классом */
+#radio1:checked ~ .carousel-wrapper .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .carousel-wrapper .first {
+    margin-left: -90vw;
+}
+
+#radio3:checked ~ .carousel-wrapper .first {
+    margin-left: -180vw;
+}
+
+#radio4:checked ~ .carousel-wrapper .first {
+    margin-left: -270vw;
+}
+
+input[type="radio"] {
+    /* all: unset; */
+}
+
 /* + значит берем следующий элемент */
 /* то есть берем label следующий за input type radio */
-input[type="radio"]:checked+label {
-    background-color: inherit;
+input[type="radio"]:checked+label>.slider__navlink {
+    background-color: green;
 }
 
 label {
-    display: inline-block;
+    /* display: block; */
     height: 15px;
     width: 15px;
     border-radius: 50%;
     background-color: #71a5f1;
     border: 2px solid #71a5f1;
-    margin: 0 10px;
+    margin: 10px;
 }
 
-.slider__navlink {
-    display: block;
-}
 
-.slider__navlink:hover input[type="radio"] {
-    border-color: white;
-    background-color: white;
+a.slider__navlink {
+    display: none;
 }

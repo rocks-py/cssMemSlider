@@ -98,11 +98,25 @@ input[type="radio"] {
     /* all: unset; */
 }
 
-/* + значит берем следующий элемент */
-/* то есть берем label следующий за input type radio */
-input[type="radio"]:checked+label>.slider__navlink {
-    background-color: green;
+
+#radio1:checked ~ .slider__nav #label1 .circle {
+    /* alpha канал = 0, значит прозрачный полностью */
+    background-color: rgba(255, 255, 255, 0);
 }
+
+#radio2:checked ~ .slider__nav #label2 .circle {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#radio3:checked ~ .slider__nav #label3 .circle {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#radio4:checked ~ .slider__nav #label4 .circle {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
 
 label {
     width: 30px;

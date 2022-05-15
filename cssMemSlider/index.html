@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <input data-text="Some joke 1" type="radio" name="radioButton" id="radio1" checked></input>
-    <input data-text="Some joke 2" type="radio" name="radioButton" id="radio2"></input>
-    <input data-text="Some joke 3" type="radio" name="radioButton" id="radio3"></input>
-    <input data-text="Some joke 4" type="radio" name="radioButton" id="radio4"></input>
+    <input type="radio" name="radioButton" value="1" id="radio1" checked></input>
+    <input type="radio" name="radioButton" value="2" id="radio2"></input>
+    <input type="radio" name="radioButton" value="3" id="radio3"></input>
+    <input type="radio" name="radioButton" value="4" id="radio4"></input>
     <div class="carousel-wrapper">
         <div class="carousel">
             <div class="mem-container mem-001 first" id="slides__1">
@@ -32,15 +32,24 @@
     </div>
     
     <div class="slider__nav">
-            <label for="radio1"><a class="slider__navlink" href="#slides__1">some text</a></label>        
-            <label for="radio2"><a class="slider__navlink" href="#slides__2">some text</a></label> 
-            <label for="radio3"><a class="slider__navlink" href="#slides__3">some text</a></label>
-            <label for="radio4"><a class="slider__navlink" href="#slides__4">some text</a></label>
+            <label for="radio1"></label>        
+            <label for="radio2"></label> 
+            <label for="radio3"></label>
+            <label for="radio4"></label>
         
     </div>
 
-    <p>
-        Some text
+    <p class="paragraph text1">
+        Some joke 1
+    </p>
+    <p class="paragraph text2">
+        Some joke 2
+    </p>
+    <p class="paragraph text3">
+        Some joke 3
+    </p>
+    <p class="paragraph text4">
+        Some joke 4
     </p>
 </body>
 

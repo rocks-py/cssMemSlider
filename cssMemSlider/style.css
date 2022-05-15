@@ -78,19 +78,11 @@ p {
     display: none;
 }
 
-#radio1:checked ~ .text1 {
-    display: block;
-}
-
-#radio2:checked ~ .text2 {
-    display: block;
-}
-
-#radio3:checked ~ .text3 {
-    display: block;
-}
-
-#radio4:checked ~ .text4 {
+#radio1:checked ~ .text1,
+#radio2:checked ~ .text2,
+#radio3:checked ~ .text3,
+#radio4:checked ~ .text4
+{
     display: block;
 }
 
@@ -99,24 +91,14 @@ input[type="radio"] {
 }
 
 
-#radio1:checked ~ .slider__nav #label1 .circle {
+#radio1:checked ~ .slider__nav #label1 .circle,
+#radio2:checked ~ .slider__nav #label2 .circle,
+#radio3:checked ~ .slider__nav #label3 .circle,
+#radio4:checked ~ .slider__nav #label4 .circle
+{
     /* alpha канал = 0, значит прозрачный полностью */
     background-color: rgba(255, 255, 255, 0);
 }
-
-#radio2:checked ~ .slider__nav #label2 .circle {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-#radio3:checked ~ .slider__nav #label3 .circle {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-#radio4:checked ~ .slider__nav #label4 .circle {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-
 
 label {
     width: 30px;

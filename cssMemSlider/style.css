@@ -46,15 +46,10 @@ body {
     background-color: burlywood;
 }
 
-.slider__nav {
-    box-sizing: border-box;
-    width: 200px;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 2rem;
+
+/* switch it on or off to display radios */
+input[type="radio"] {
+    /* all: unset; */
 }
 
 /* ~ ищем на этом же уровне элемент с классом */
@@ -74,22 +69,20 @@ body {
     margin-left: -270vw;
 }
 
-p {
-    display: none;
-}
+/* ======================================= */
+/* ============ INDICATORS =============== */
+/* ======================================= */
 
-#radio1:checked ~ .text1,
-#radio2:checked ~ .text2,
-#radio3:checked ~ .text3,
-#radio4:checked ~ .text4
-{
-    display: block;
+.slider__nav {
+    box-sizing: border-box;
+    width: 200px;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
 }
-
-input[type="radio"] {
-    /* all: unset; */
-}
-
 
 #radio1:checked ~ .slider__nav #label1 .circle,
 #radio2:checked ~ .slider__nav #label2 .circle,
@@ -99,6 +92,7 @@ input[type="radio"] {
     /* alpha канал = 0, значит прозрачный полностью */
     background-color: rgba(255, 255, 255, 0);
 }
+
 
 label {
     width: 30px;
@@ -122,7 +116,18 @@ label:hover .circle {
     border-color: white;
 }
 
+/* ======================================= */
+/* =============== TEXT ================== */
+/* ======================================= */
 
-a.slider__navlink {
+p {
     display: none;
+}
+
+#radio1:checked ~ .text1,
+#radio2:checked ~ .text2,
+#radio3:checked ~ .text3,
+#radio4:checked ~ .text4
+{
+    display: block;
 }

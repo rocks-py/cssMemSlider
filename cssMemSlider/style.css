@@ -22,7 +22,7 @@ body {
 .mem-container {
     width: 90vw;
     height: 60vh;
-    transition: 2s;
+    transition: .5s;
 }
 
 .image {
@@ -125,4 +125,19 @@ p {
 #radio4:checked ~ #text4
 {
     display: block;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .carousel-wrapper {
+        height: 30vh;
+    }
+
+    .mem-container {
+        height: 30vh;   
+    }
+
+    p {
+        font-size: 22px;
+    }
 }

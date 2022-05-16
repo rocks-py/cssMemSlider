@@ -86,10 +86,10 @@ input[type="radio"] {
     height: 2rem;
 }
 
-#radio1:checked ~ .slider__nav #label1 .circle,
-#radio2:checked ~ .slider__nav #label2 .circle,
-#radio3:checked ~ .slider__nav #label3 .circle,
-#radio4:checked ~ .slider__nav #label4 .circle
+#radio1:checked ~ .flex__container #label1 .circle,
+#radio2:checked ~ .flex__container #label2 .circle,
+#radio3:checked ~ .flex__container #label3 .circle,
+#radio4:checked ~ .flex__container #label4 .circle
 {
     /* alpha канал = 0, значит прозрачный полностью */
     background-color: rgba(255, 255, 255, 0);
@@ -148,5 +148,13 @@ p {
 
     p {
         font-size: 22px;
+    }
+
+    .flex__container {
+        flex-direction: column;
+    }
+
+    .text__container {
+        order: 2;
     }
 }

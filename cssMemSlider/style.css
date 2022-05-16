@@ -28,28 +28,21 @@ body {
 .image {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
-.mem-001 .image {
-    background-color: bisque;
-}
-
-.mem-002 .image {
-    background-color: greenyellow;
-}
-
-.mem-003 .image {
-    background-color: brown;
-}
-
+.mem-001 .image,
+.mem-002 .image,
+.mem-003 .image,
 .mem-004 .image {
-    background-color: burlywood;
+    background-color: black;
 }
+
 
 
 /* switch it on or off to display radios */
 input[type="radio"] {
-    /* all: unset; */
+    all: unset;
 }
 
 /* ~ ищем на этом же уровне элемент с классом */
@@ -122,12 +115,14 @@ label:hover .circle {
 
 p {
     display: none;
+    font-size: 32px;
+    padding: 10px;
 }
 
-#radio1:checked ~ .text1,
-#radio2:checked ~ .text2,
-#radio3:checked ~ .text3,
-#radio4:checked ~ .text4
+#radio1:checked ~ #text1,
+#radio2:checked ~ #text2,
+#radio3:checked ~ #text3,
+#radio4:checked ~ #text4
 {
     display: block;
 }

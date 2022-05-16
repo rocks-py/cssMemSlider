@@ -62,19 +62,28 @@ input[type="radio"] {
     margin-left: -270vw;
 }
 
+
+.flex__container {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.text__container {
+    flex-grow: 1;
+}
+
 /* ======================================= */
 /* ============ INDICATORS =============== */
 /* ======================================= */
 
 .slider__nav {
-    box-sizing: border-box;
-    width: 200px;
-    height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin-top: 2rem;
+    box-sizing: border-box;
+    height: 2rem;
 }
 
 #radio1:checked ~ .slider__nav #label1 .circle,
@@ -119,10 +128,10 @@ p {
     padding: 10px;
 }
 
-#radio1:checked ~ #text1,
-#radio2:checked ~ #text2,
-#radio3:checked ~ #text3,
-#radio4:checked ~ #text4
+#radio1:checked ~ .flex__container #text1,
+#radio2:checked ~ .flex__container #text2,
+#radio3:checked ~ .flex__container #text3,
+#radio4:checked ~ .flex__container #text4
 {
     display: block;
 }
